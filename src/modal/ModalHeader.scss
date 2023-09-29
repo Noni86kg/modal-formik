@@ -1,0 +1,25 @@
+.modal-header {
+  background-color: var(--infoBG);
+  align-items: center;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  padding: 12px 16px;
+  justify-content: space-between;
+  * {
+    color: var(--black);
+  }
+  .close-icon-button {
+    margin-left: auto;
+    color: white;
+    background: var(--lightGray);
+    border-radius: 50%;
+    display: flex;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    &:hover {
+      background: var(--lightGrayHover);
+    }
+  }
+}

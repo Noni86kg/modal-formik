@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --black: rgb(0, 0, 0);
+  --Marineblue: #02295a;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-shadow: 0 0 #0000;
+  --pink: rgb(236, 72, 153);
+  --pinkDark: rgb(219, 39, 119);
+
+  --infoButton: rgb(245, 245, 245);
+  --infoButton__hover: rgb(209, 209, 209);
+  --primaryButton: #1976d2;
+  --primaryButton__hover: #1565c0;
+  --errorButton: #ef5350;
+  --errorButton__hover: #d32f2f;
+  --warningButton: #ff9800;
+  --warningButton__hover: #ed6c02;
+  --succesButton: #4caf50;
+  --succesButton__hover: #2e7d32;
+
+  --infoBG: rgb(240, 240, 240);
+  --primaryBG: hsl(210, 79%, 56%);
+  --errorBG: hsl(1, 83%, 73%);
+  --warningBG: hsl(36, 100%, 67%);
+  --succesBG: hsl(122, 39%, 59%);
+
+  --lightGray: rgba(0, 0, 0, 0.05);
+  --lightGrayHover: rgba(0, 0, 0, 0.15);
+  --gray: hsl(0, 0%, 44%);
+}
+
+.flex {
+  display: flex;
+}
+
+.gap {
+  gap: 30px;
+}
