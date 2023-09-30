@@ -25,6 +25,7 @@ const Form = ({ closeModal }) => (
     validationSchema={validationSchema}
     onSubmit={(values) => {
       console.log(values);
+      closeModal();
     }}
   >
     {({
@@ -42,27 +43,29 @@ const Form = ({ closeModal }) => (
           <ModalHeader title="Form" closeModal={closeModal} />
 
           <div className="form">
-            <InputField
-              name="firstName"
-              label="First Name"
-              required
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.firstName}
-              touched={touched.firstName}
-              errors={errors.firstName}
-            />
+            <div className="flex gap">
+              <InputField
+                name="firstName"
+                label="First Name"
+                required
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.firstName}
+                touched={touched.firstName}
+                errors={errors.firstName}
+              />
 
-            <InputField
-              name="lastName"
-              label="Last Name"
-              required
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.lastName}
-              touched={touched.lastName}
-              errors={errors.lastName}
-            />
+              <InputField
+                name="lastName"
+                label="Last Name"
+                required
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.lastName}
+                touched={touched.lastName}
+                errors={errors.lastName}
+              />
+            </div>
 
             <InputField
               name="email"
@@ -77,6 +80,9 @@ const Form = ({ closeModal }) => (
           </div>
 
           <ModalBottom>
+            <Button type="button" onClick={closeModal}>
+              Cancel
+            </Button>
             <Button theme="primary" type="submit" disabled={!isValid || !dirty}>
               Submit
             </Button>

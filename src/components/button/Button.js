@@ -3,7 +3,7 @@ import "./Button.scss";
 
 const Button = ({
   children,
-  handleOnClick,
+  onClick,
   className,
   theme = "info",
   name,
@@ -19,7 +19,7 @@ const Button = ({
       type={type}
       name={name}
       className={classNameProps}
-      onClick={handleOnClick}
+      onClick={onClick}
       disabled={disabled}
     >
       {children}

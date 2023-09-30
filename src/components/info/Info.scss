@@ -1,0 +1,42 @@
+.text {
+  padding: 24px;
+}
+
+.info--info {
+  .modal-header {
+    background-color: var(--infoBG);
+    .close-icon-button,
+    & > span {
+      color: var(--black);
+    }
+  }
+}
+
+.info--primary {
+  .modal-header {
+    background-color: var(--primaryBG);
+  }
+}
+
+.info--error {
+  .modal-header {
+    background-color: var(--errorBG);
+  }
+}
+
+.info--warning {
+  .modal-header {
+    background-color: var(--warningBG);
+  }
+}
+.info--succes {
+  .modal-header {
+    background-color: var(--succesBG);
+  }
+}
+
+.info--warning {
+  .modal-header {
+    background-color: var(--warningBG);
+  }
+}

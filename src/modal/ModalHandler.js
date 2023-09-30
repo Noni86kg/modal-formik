@@ -22,6 +22,7 @@ const ModalHandler = () => {
       const { className = "" } = childrenProps;
       childrenProps["className"] = `modal-content ${className}`;
       childrenProps["closeModal"] = () => handleCloseModal(index);
+
       return (
         <Overlay key={`overlay-${index + 1}`} style={{ zIndex: 5 + index * 2 }}>
           <Modal key={`modal-${index}`} style={{ zIndex: 6 + index * 2 }}>
@@ -31,12 +32,10 @@ const ModalHandler = () => {
       );
     });
 
-  return <>{createModal()}</>;
-
-  // return ReactDom.createPortal(
-  //   <>{createModal()}</>,
-  //   document.getElementById("portal")
-  // );
+  return ReactDom.createPortal(
+    <>{createModal()}</>,
+    document.getElementById("portal")
+  );
 };
 
 export default ModalHandler;
